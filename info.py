@@ -19,9 +19,9 @@ def is_enabled(value, default):
 
 # Bot information *
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID', ''])
-API_HASH = environ['API_HASH', '']
-BOT_TOKEN = environ['BOT_TOKEN', '']
+API_ID = int(environ['API_ID'])
+API_HASH = environ['API_HASH']
+BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -45,10 +45,10 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # LOG CHANNELS *
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', ''))
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', ''))
-PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL'))
+LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
+PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS'))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '').split()]
@@ -61,7 +61,7 @@ QR_CODE_IMG = environ.get('QR_CODE_IMG','https://envs.sh/OUu.jpg/HGBOTZ.jpg') #a
 UPI_ID = environ.get('UPI_ID', '8371054739.wallet@phonepe') #enter your upi id here - grab it from your online payment methods.
 
 # Others
-TUTORIAL = environ.get('TUTORIAL', '') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'onefighterarmy')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -81,7 +81,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), Fals
 
 #LazyRenamer Configs
 FLOOD = int(environ.get("FLOOD", "10"))
-LAZY_MODE = bool(environ.get("LAZY_MODE", "")) #make it true to enable file renaming feature in bot
+LAZY_MODE = bool(environ.get("LAZY_MODE", "False")) #make it true to enable file renaming feature in bot
 
 # Requested Content template variables --- 
 ADMIN_USRNM = environ.get('ADMIN_USRNM','onefighterarmy') # WITHOUT @
@@ -191,4 +191,5 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # 🥰  Thank you for giving me credit @LazyDeveloperr  🥰
 # for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
 # rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
+
 
