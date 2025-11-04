@@ -136,7 +136,7 @@ lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) el
 PRIME_DOWNLOADERS = (lazydownloaders) if lazydownloaders else []
 
 # URL UPLOADING
-BANNED_USERS = set(int(x) for x in environ.get("BANNED_USERS", "").split())
+BANNED_USERS = set(int(x) for x in environ.get("BANNED_USERS", "0").split())
 DOWNLOAD_LOCATION = "./DOWNLOADS"
 MAX_FILE_SIZE = 4194304000
 TG_MAX_FILE_SIZE = 4194304000
@@ -169,7 +169,7 @@ DISCUSSION_CHAT_USRNM = "Discusss_Here" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/real_MoviesAdda3"
+DOWNLOAD_TEXT_URL = "https://t.me/onefighterarmy"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
@@ -191,6 +191,7 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # 🥰  Thank you for giving me credit @LazyDeveloperr  🥰
 # for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
 # rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
+
 
 
 
